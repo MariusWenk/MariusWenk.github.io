@@ -1,14 +1,15 @@
 ---
-layout: default
-title: Machine Learning
-permalink: /ai
-nav: true
-nav_order: 6
+layout: page
+title: Pet classifier
+description: trained with fast.ai in Python
+img: assets/img/Image_Meli_cat.jpg
+importance: 1
+category: machine learning
+giscus_comments: true
 ---
 
-<p><h2>Machine Learning</h2></p>
-<br/><p>This page is designated to showcase simple ML models that I have trained.
-They are implemented via an API to Gradio on Hugging Face Spaces. You can check my Hugging 
+<p>This page showcases a simple ML model that I have trained.
+It is implemented via an API to Gradio on Hugging Face Spaces. You can check my Hugging 
 Face Account <a href="https://huggingface.co/MariusWenk">here</a>. If not used for a while, 
 the execution on Hugging Face might be paused and the model not available.</p>
 <br/><p>The following model is trained to identify cat and dog breeds from images:</p>
@@ -21,7 +22,8 @@ the execution on Hugging Face might be paused and the model not available.</p>
 import { Client } from "https://cdn.jsdelivr.net/npm/@gradio/client/dist/index.min.js";
   
 function read(image) {
-    document.getElementById("results").innerHTML = '<br/><p>It might take some while to calculate the result via the API to Hugging Face ...</p>'
+    document.getElementById("results").innerHTML = 
+      `<p>It might take some while to calculate the result via the API to Hugging Face ...</p>`
     const reader = new FileReader();
     reader.addEventListener("load", () => loaded(reader, image));
     reader.readAsDataURL(image.files[0]);
@@ -48,6 +50,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 </script>
-  
-
-
+<br/>
