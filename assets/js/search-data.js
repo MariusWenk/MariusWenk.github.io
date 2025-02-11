@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-projects",
           title: "Projects",
-          description: "Here I present some of my projects from scientific writing to executable programs.",
+          description: "Some of my projects in science and programming.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -51,14 +51,14 @@ ninja.data = [{
     },{id: "news-the-website-is-now-up-and-operational-new-blog-posts-are-still-to-come",
           title: 'The website is now up and operational! New blog posts are still to...',
           description: "",
-          section: "News",},{id: "projects-",
-          title: '',
-          description: "",
+          section: "News",},{id: "projects-bachelor-thesis",
+          title: 'Bachelor Thesis',
+          description: "Transient optical response and density-evolution of valence electrons in copper after ultrafast laser-excitation",
           section: "Projects",handler: () => {
               window.location.href = "/projects/BSc-thesis/";
-            },},{id: "projects-",
-          title: '',
-          description: "",
+            },},{id: "projects-master-thesis",
+          title: 'Master Thesis',
+          description: "Engineering nanoporous substrates to fine-tune T cell activation",
           section: "Projects",handler: () => {
               window.location.href = "/projects/MSc-thesis/";
             },},{id: "projects-pet-classifier",
