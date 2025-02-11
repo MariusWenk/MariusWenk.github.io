@@ -28,4 +28,4 @@ After recently graduating from ETH Zürich with a master's degree in **physics**
 
 I like to learn something new every day and am very fascinated by how **society** works and develops over time. Under the blog section, I would like to share some of the findings and **insights** I have.
 
-On this website, I also present some of my previous **projects** and **repositories**.
+On this website, I also present some of my previous [**projects**](projects) and [**repositories**](repositories).

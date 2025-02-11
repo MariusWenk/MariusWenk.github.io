@@ -2,10 +2,10 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: My projects, ranging from resources to executable programs
+description: Here, I present some of my projects from scientific writing to executable programs.
 nav: true
 nav_order: 1
-display_categories: [machine learning, programming, music]
+display_categories: [scientific writing, machine learning]
 horizontal: false
 ---
 
