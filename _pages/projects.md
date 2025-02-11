@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: Here, I present some of my projects from scientific writing to executable programs.
+description: Here I present some of my projects from scientific writing to executable programs.
 nav: true
 nav_order: 1
 display_categories: [scientific writing, machine learning]
