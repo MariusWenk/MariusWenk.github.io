@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-projects",
           title: "Projects",
-          description: "My projects, ranging from resources to executable programs",
+          description: "Here, I present some of my projects from scientific writing to executable programs.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -51,11 +51,16 @@ ninja.data = [{
     },{id: "news-the-website-is-now-up-and-operational-new-blog-posts-are-still-to-come",
           title: 'The website is now up and operational! New blog posts are still to...',
           description: "",
-          section: "News",},{id: "projects-resources",
-          title: 'Resources',
-          description: "for learning ML",
+          section: "News",},{id: "projects-",
+          title: '',
+          description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/MLresources/";
+              window.location.href = "/projects/BSc-thesis/";
+            },},{id: "projects-",
+          title: '',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/MSc-thesis/";
             },},{id: "projects-pet-classifier",
           title: 'Pet classifier',
           description: "trained with fast.ai in Python",
