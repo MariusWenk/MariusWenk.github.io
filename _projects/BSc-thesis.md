@@ -1,5 +1,5 @@
 ---
-layout: redirect
+layout: page
 title: Bachelor Thesis
 description: Transient optical response and
 density-evolution of valence electrons in

@@ -2,6 +2,7 @@
 <html lang="{{ site.lang }}">
   <!-- Head -->
   <head>
+  {% include head.html %}
     {% if page.redirect %}
       {% if page.redirect == true %}
         {% assign redirect = site.baseurl | append: '/' %}
@@ -12,6 +13,9 @@
       {% endif %}
       <meta http-equiv="refresh" content="3; url={{ redirect }}">
     {% endif %}
+    {%- if page.redirect_to -%}
+      <meta http-equiv="refresh" content="0; url={{ site.baseurl | append: page.redirect_to }}/" />
+    {%- endif -%}
     {% include head.liquid %}
   </head>
 
