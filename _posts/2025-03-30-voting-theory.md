@@ -1,16 +1,13 @@
 ---
 layout: post
 title: Voting Theory - Condorcet vs Consistency
-date: 2025-02-16 11:57:00
+date: 2025-03-30 11:57:00
 description: Why finding a good voting system is mathematically difficult
 tags: voting theory
 categories: mathematics
-thumbnail: assets/img/9.jpg
 giscus_comments: true
+pretty_table: true
 ---
-
-
-# Voting Theory - Condorcet vs Consistency
 
 I recently learned about voting theory in the context of [this](https://www.lesswrong.com/posts/JbRkDvwXh39bEx3xw/voting-theory-introduction) blog by Scott Garrabrant, and while I can definitely recommend that blog, I felt like the conflict between Condorcet and Consistent voting systems could use a discussion of its own. During my analysis of the topic, I also discovered a [YouTube video](https://youtu.be/qf7ws2DF-zk?si=gz1GPLmaTZ96r3F5) on voting theory by Veritasium, which inspired some of this post and which I can highly recommend. But let's dive right into what Condorcet and Consistency actually mean for voting systems.
 ## Condorcet Voting Systems
@@ -47,6 +44,7 @@ Consider an election with three candidates: A, B, and C, and the following prefe
 | 4                | A > B > C        |
 | 3                | B > C > A        |
 | 2                | C > A > B        |
+
 Pairwise Comparisons:  
 A beats B (4 + 2 = 6 votes vs. 3 votes)
 B beats C (4 + 3 = 7 votes vs. 2 votes)
@@ -75,6 +73,7 @@ However, we want to show that this voting system is not Consistent. Therefore, w
 | 3                | B > C > A        |
 | 3                | C > A > B        |
 | 3                | C > B > A        |
+
 Pairwise Comparisons:  
 A beats B: 10 to 6
 B beats C: 10 to 6
@@ -94,6 +93,7 @@ Thus, A wins as only A > B > C remains.
 | 4                | A > C > B        |
 | 1                | C > B > A        |
 | 2                | C > A > B        |
+
 Pairwise Comparisons:
 A beats C: 4 to 3
 C beats B: 7 to 0
@@ -112,6 +112,7 @@ Now, we take the combined population of voters from population 1 and 2 and calcu
 | 5                | C > A > B        |
 | 4                | A > C > B        |
 | 4                | C > B > A        |
+
 Pairwise Comparisons:
 A beats B: 16 to 7
 C beats B: 13 to 10
