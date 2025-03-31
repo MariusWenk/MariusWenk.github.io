@@ -87,7 +87,8 @@ A > B > C > A
 Using ranked pairs, we lock in the strongest victories first:
 - A > B (margin = 4 votes)  
 - B > C (margin = 4 votes)  
-- C > A (margin = 2 votes) is ignored.  
+- C > A (margin = 2 votes) is ignored.
+<p></p>
 Thus, A wins as only A > B > C remains.
 #### Population 2
 
