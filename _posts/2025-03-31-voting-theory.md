@@ -51,7 +51,7 @@ Pairwise Comparisons:
 - C beats A (3 + 2 = 5 votes vs. 4 votes)
 <p></p>
 This creates a cycle:
-A > B > C > A
+A > B > C > A.
 
 In order to conduct votes based on relative preferences, different approaches to deal with preference cycles have been invented. One of these is called ranked pairs.
 
@@ -82,7 +82,7 @@ Pairwise Comparisons:
 - C beats A: 9 to 7
 <p></p>
 This creates a cycle:
-A > B > C > A
+A > B > C > A.
 
 Using ranked pairs, we lock in the strongest victories first:
 - A > B (margin = 4 votes)  
@@ -125,7 +125,7 @@ Pairwise Comparisons:
 - C beats A: 12 to 11
 <p></p>
 There is no cycle and we have:
-C > A > B; C > B
+C > A > B; C > B.
 Thus C wins.
 
 In the example for ranked pairs voting above, candidate A is indeed the winner in both subpopulations 1 and 2. However, in the combined population, the winner is a different candidate, namely C. This shows that ranked pairs voting is not consistent.
