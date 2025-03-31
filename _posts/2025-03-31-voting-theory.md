@@ -44,13 +44,13 @@ Consider an election with three candidates: A, B, and C, and the following prefe
 | 4                | A > B > C        |
 | 3                | B > C > A        |
 | 2                | C > A > B        |
-<p></p>
+
 Pairwise Comparisons:  
 - A beats B (4 + 2 = 6 votes vs. 3 votes)
 - B beats C (4 + 3 = 7 votes vs. 2 votes)
 - C beats A (3 + 2 = 5 votes vs. 4 votes)
 <p></p>
-This creates a cycle:<p></p>
+This creates a cycle:
 A > B > C > A
 
 In order to conduct votes based on relative preferences, different approaches to deal with preference cycles have been invented. One of these is called ranked pairs.
@@ -75,13 +75,13 @@ However, we want to show that this voting system is not Consistent. Therefore, w
 | 3                | B > C > A        |
 | 3                | C > A > B        |
 | 3                | C > B > A        |
-<p></p>
+
 Pairwise Comparisons:  
 - A beats B: 10 to 6
 - B beats C: 10 to 6
 - C beats A: 9 to 7
 <p></p>
-This creates a cycle:<p></p>
+This creates a cycle:
 A > B > C > A
 
 Using ranked pairs, we lock in the strongest victories first:
@@ -90,6 +90,7 @@ Using ranked pairs, we lock in the strongest victories first:
 - C > A (margin = 2 votes) is ignored.
 <p></p>
 Thus, A wins as only A > B > C remains.
+
 #### Population 2
 
 | Number of Voters | Preference Order |
@@ -97,14 +98,14 @@ Thus, A wins as only A > B > C remains.
 | 4                | A > C > B        |
 | 1                | C > B > A        |
 | 2                | C > A > B        |
-<p></p>
+
 Pairwise Comparisons:
 - A beats C: 4 to 3
 - C beats B: 7 to 0
 - A beats B: 6 to 1
 <p></p>
-There is no cycle and we have:<p></p>
-A > C > B; A > B<p></p>
+There is no cycle and we have:
+A > C > B; A > B.
 Thus A wins.
 
 #### Full Electorate
@@ -117,14 +118,14 @@ Now, we take the combined population of voters from population 1 and 2 and calcu
 | 5                | C > A > B        |
 | 4                | A > C > B        |
 | 4                | C > B > A        |
-<p></p>
+
 Pairwise Comparisons:
 - A beats B: 16 to 7
 - C beats B: 13 to 10
 - C beats A: 12 to 11
 <p></p>
-There is no cycle and we have:<p><\p>
-C > A > B; C > B <p></p>
+There is no cycle and we have:
+C > A > B; C > B
 Thus C wins.
 
 In the example for ranked pairs voting above, candidate A is indeed the winner in both subpopulations 1 and 2. However, in the combined population, the winner is a different candidate, namely C. This shows that ranked pairs voting is not consistent.
