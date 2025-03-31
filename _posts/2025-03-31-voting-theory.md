@@ -36,7 +36,7 @@ A voting system is considered **Consistent** if two disjoint electorates that pr
 Let's have a look at what happens if we have a voting system that satisfies the Condorcet criterion. For such a voting system, we need every vote to give a relative order of preference between all candidates. From this data, we want to compare all pairs of candidates to see who is preferred by a majority. If there is one candidate preferred over every other candidate, then that candidate should obviously win in order to satisfy the Condorcet criterion. In this ideal case, one might also conclude that such a voting system is Consistent, but we have not looked at cases without one clear winner yet. The problem lies in how to decide who won based on relative preferences between candidates if there are preference cycles.
 
 In the minimal case of three candidates, a **preference cycle** occurs if candidate A is preferred over candidate B by a majority, B is preferred over C, and C is preferred over A. The following population of voters shows an example of this.
-#### Cycle Population
+#### Preference Cycle Population
 Consider an election with three candidates: A, B, and C, and the following preferences:
 
 | Number of Voters | Preference Order |
@@ -44,7 +44,7 @@ Consider an election with three candidates: A, B, and C, and the following prefe
 | 4                | A > B > C        |
 | 3                | B > C > A        |
 | 2                | C > A > B        |
-
+<\br>
 Pairwise Comparisons:  
 A beats B (4 + 2 = 6 votes vs. 3 votes)
 B beats C (4 + 3 = 7 votes vs. 2 votes)
@@ -73,7 +73,7 @@ However, we want to show that this voting system is not Consistent. Therefore, w
 | 3                | B > C > A        |
 | 3                | C > A > B        |
 | 3                | C > B > A        |
-
+<\br>
 Pairwise Comparisons:  
 A beats B: 10 to 6
 B beats C: 10 to 6
@@ -93,7 +93,7 @@ Thus, A wins as only A > B > C remains.
 | 4                | A > C > B        |
 | 1                | C > B > A        |
 | 2                | C > A > B        |
-
+<\br>
 Pairwise Comparisons:
 A beats C: 4 to 3
 C beats B: 7 to 0
@@ -112,7 +112,7 @@ Now, we take the combined population of voters from population 1 and 2 and calcu
 | 5                | C > A > B        |
 | 4                | A > C > B        |
 | 4                | C > B > A        |
-
+<\br>
 Pairwise Comparisons:
 A beats B: 16 to 7
 C beats B: 13 to 10
