@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Voting Theory - Condorcet vs Consistency
-date: 2025-03-30 11:57:00
+date: 2025-03-31 11:57:00
 description: Why finding a good voting system is mathematically difficult
 tags: voting theory
 categories: mathematics
