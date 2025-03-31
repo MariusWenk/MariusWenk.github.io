@@ -37,15 +37,15 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-my-first-blog",
+        },{id: "post-voting-theory-condorcet-vs-consistency",
       
-        title: "My first blog",
+        title: "Voting Theory - Condorcet vs Consistency",
       
-      description: "this is what a future blog of mine might look like",
+      description: "Why finding a good voting system is mathematically difficult",
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2025/photo-blog-ai/";
+          window.location.href = "/blog/2025/voting-theory/";
         
       },
     },{id: "news-the-website-is-now-up-and-operational-new-blog-posts-are-still-to-come",
